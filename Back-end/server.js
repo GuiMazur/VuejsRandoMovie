@@ -1,6 +1,6 @@
 const express = require('express');
 
-const getMovies = require('./index.js');
+const getMovies = require('./getMovies.js');
 
 const app = express();
 
