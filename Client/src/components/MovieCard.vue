@@ -44,14 +44,14 @@ export default {
 
   #poster{
     border-radius: 8px;
-    max-height: 350px;
+    max-height: 350px;  
   }
 
   #info{
     display: flex;
     flex-direction: column;
     column-gap: 30px;
-    max-height: 354px;
+    height: 354px;
     word-wrap: break-word;
     overflow-y: auto;
   }

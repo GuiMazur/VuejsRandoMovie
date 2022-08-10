@@ -15,7 +15,7 @@ export default{
         async getMovieInfo() {
             this.loading = true;
             let response = await axios.get('http://localhost:3000');
-            this.movieInfo = response.data;
+            this.movieInfo = JSON.parse(response.data);
             this.loading = false;
         }
   
