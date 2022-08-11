@@ -16,9 +16,10 @@ export default{
             this.loading = true;
             let response = await axios.get('http://localhost:3000');
             this.movieInfo = JSON.parse(response.data);
-            this.loading = false;
+            setTimeout(() => {
+                this.loading = false;
+            }, 400);
         }
-  
     },
     components: {
         Header, MovieCard    

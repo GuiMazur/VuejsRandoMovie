@@ -11,7 +11,7 @@ export default {
 
 <template>
   <section id="movies">
-    <div v-if="!loading">
+    <div v-show="!loading">
       <figure>
         <img id="poster" :src="posterpath" />
       </figure>
@@ -24,7 +24,7 @@ export default {
         </div>
       </aside>
     </div>
-    <div v-else id="loader"></div>
+    <div v-show="loading" id="loader"></div>
   </section>
   
 </template>
